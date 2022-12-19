@@ -1,0 +1,55 @@
+{
+  "workbench.colorTheme": "Penumbra Dark Contrast+",
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.formatAll.terraform": true
+    },
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.formatAll.terraform": true
+    },
+  },
+  "workbench.colorCustomizations": {},
+  "terminal.integrated.persistentSessionScrollback": 100000000,
+  "terminal.integrated.scrollback": 100000000,
+  "window.zoomLevel": 1,
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "editor.hover.enabled": true
+}

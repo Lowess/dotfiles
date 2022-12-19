@@ -1,0 +1,24 @@
+[user]
+  name = Florian Dambrine
+  email = florian@ryzentosh.com
+
+[core]
+  excludesfile = ~/.gitignore
+
+[init]
+  defaultBranch = master
+
+[web]
+  browser = google-chrome
+
+[diff "sopsdiffer"]
+  textconv = sops -d
+
+[alias]
+  squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"
+  current="!f(){ git branch --show-current; };f"
+  latest-branches="!f(){ git branch --sort=-committerdate; };f"
+  tags="!f(){ git tag -l --sort=v:refname; };f"
+
+[pull]
+	rebase = true
